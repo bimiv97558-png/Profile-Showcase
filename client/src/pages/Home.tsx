@@ -113,7 +113,7 @@ export default function Home() {
               <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Github size={24} />
               </a>
-              <a href="mailto:shehab@example.com" className="hover:text-primary transition-colors">
+              <a href="mailto:meherabshehab5@gmail.com" className="hover:text-primary transition-colors">
                 <Mail size={24} />
               </a>
             </div>
