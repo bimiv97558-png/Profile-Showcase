@@ -496,7 +496,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm text-white/70">Email</p>
-                      <p className="font-medium">shehab@example.com</p>
+                      <p className="font-medium">meherabshehab5@gmail.com</p>
                     </div>
                   </div>
                   
