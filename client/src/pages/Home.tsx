@@ -34,6 +34,37 @@ import contactImg from "@assets/485993787_2625588594462800_4171523904716513340_n
 // CV File
 import cvFile from "@assets/Academic_CV_1770899073232.pdf";
 
+const projects = [
+  {
+    title: "Zero-Virgin-Cotton Sustainable Denim",
+    category: "Thesis / Final Year Project",
+    desc: "Development of a High-Performance 100% Sustainable Denim Yarn by blending mechanical cotton waste with Lyocell fibers. Focused on circular fashion economy.",
+    tags: ["Sustainability", "Circular Economy", "R&D"],
+    icon: Leaf
+  },
+  {
+    title: "AI-Integrated Smart Textiles",
+    category: "Research Proposal",
+    desc: "A proposal for smart textiles capable of real-time behavior prediction and personalization using integrated AI systems.",
+    tags: ["AI", "Smart Fabrics", "Machine Learning"],
+    icon: Microchip
+  },
+  {
+    title: "Innovations in Textile Membrane Tech",
+    category: "Review Paper",
+    desc: "A comprehensive review paper exploring recent innovations and applications in textile membrane technology.",
+    tags: ["Membrane Tech", "Material Science", "Review"],
+    icon: FlaskConical
+  },
+  {
+    title: "AI in Wastewater Treatment",
+    category: "Review Paper",
+    desc: "Researching the use of Artificial Intelligence in textile wastewater treatment methods to improve environmental impact.",
+    tags: ["AI", "Sustainability", "Environment"],
+    icon: MonitorCheck
+  }
+];
+
 export default function Home() {
   const { mutate, isPending } = useCreateMessage();
   const form = useForm<InsertMessage>({
@@ -213,6 +244,47 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section id="projects" className="section-padding bg-slate-50 relative overflow-hidden">
+        <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-3xl -translate-x-1/2" />
+        <div className="container max-w-7xl mx-auto relative z-10">
+          <SectionHeader title="Academic Projects" subtitle="Research & Innovation" />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {projects.map((project, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="glass p-8 rounded-3xl border border-white/40 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 group"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 flex-shrink-0">
+                    <project.icon size={32} />
+                  </div>
+                  <div>
+                    <span className="text-sm font-mono text-secondary mb-2 block uppercase tracking-wider">{project.category}</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{project.title}</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                      {project.desc}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, tIdx) => (
+                        <span key={tIdx} className="px-3 py-1 bg-white/50 border border-border/50 rounded-full text-xs font-medium text-muted-foreground">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
