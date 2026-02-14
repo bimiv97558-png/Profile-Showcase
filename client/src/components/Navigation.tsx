@@ -41,7 +41,7 @@ export function Navigation() {
             duration={500}
             className="text-2xl font-display font-bold cursor-pointer text-foreground"
           >
-            MHS<span className="text-primary">.</span>
+            Meherab<span className="text-primary">.</span>
           </ScrollLink>
 
           {/* Desktop Nav */}

@@ -121,7 +121,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
               Hi, I'm <strong className="text-foreground">Meherab Hoshen Shehab</strong>. 
               I blend technology with creativity to develop next-gen sustainable textiles. 
-              Currently maintaining a <span className="text-primary font-bold">4.00 CGPA</span> at BUFT.
+              Driven by <span className="text-primary font-bold">Innovation & Eco-Friendly Solutions</span>.
             </p>
             
             <div className="flex flex-wrap gap-4">
