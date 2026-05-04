@@ -32,7 +32,7 @@ import aboutImg from "@assets/512775554_2720457451642580_4069362693063244609_n_1
 import contactImg from "@assets/485993787_2625588594462800_4171523904716513340_n_1770899164082.jpg";
 
 // CV File
-import cvFile from "@assets/Academic_CV_1770899073232.pdf";
+import cvFile from "@assets/Meherab_Hoshen_Shehab_Resume_1777881710221.pdf";
 
 const projects = [
   {
