@@ -452,9 +452,35 @@ export default function Home() {
             {/* Leadership/Experience Column */}
             <div id="experience">
               <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
-                <Trophy className="text-secondary" /> Leadership & Awards
+                <Trophy className="text-secondary" /> Experience & Leadership
               </h3>
               <div className="space-y-6">
+                {/* Internship */}
+                <motion.div 
+                  whileHover={{ x: 10 }}
+                  className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-primary/50 transition-colors"
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="font-bold text-lg text-white">Intern</h4>
+                    <span className="px-2 py-1 bg-primary/20 text-primary text-xs rounded">Internship</span>
+                  </div>
+                  <p className="text-white/80 font-medium mb-1">AKH Group, Bangladesh</p>
+                  <p className="text-white/50 text-sm font-mono mb-3">April 2026 – June 2026</p>
+                  <ul className="space-y-1">
+                    {[
+                      "Observed and supported knitting production processes and fabric development activities.",
+                      "Assisted in fabric quality inspection and testing procedures.",
+                      "Gained exposure to production coordination, process flow and lead time management.",
+                      "Understood linkage between fabric sourcing, production and merchandising requirements."
+                    ].map((point, i) => (
+                      <li key={i} className="text-white/60 text-sm flex items-start gap-2">
+                        <span className="text-primary mt-1 shrink-0">›</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+
                 <motion.div 
                   whileHover={{ x: 10 }}
                   className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-secondary/50 transition-colors"
