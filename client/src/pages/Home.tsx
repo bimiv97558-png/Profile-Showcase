@@ -37,18 +37,18 @@ import cvFile from "@assets/Meherab_CV_(2)_1779513387898.pdf";
 
 const projects = [
   {
-    title: "Zero-Virgin-Cotton Sustainable Denim",
-    category: "Thesis / Final Year Project",
-    desc: "Development of a High-Performance 100% Sustainable Denim Yarn by blending mechanical cotton waste with Lyocell fibers. Focused on circular fashion economy.",
-    tags: ["Sustainability", "Circular Economy", "R&D"],
-    icon: Leaf
-  },
-  {
     title: "Wearable Woven Circuit Cloth by Lappet Movement",
-    category: "Final Year Project",
+    category: "Thesis / Final Year Project",
     desc: "A final-year project focused on wearable woven circuit cloth by Lappet Movement.",
     tags: ["Wearable Textiles", "Woven Circuits", "Lappet Movement"],
     icon: Microchip
+  },
+  {
+    title: "Zero-Virgin-Cotton Sustainable Denim",
+    category: "Proposed Project",
+    desc: "Development of a High-Performance 100% Sustainable Denim Yarn by blending mechanical cotton waste with Lyocell fibers. Focused on circular fashion economy.",
+    tags: ["Sustainability", "Circular Economy", "R&D"],
+    icon: Leaf
   },
   {
     title: "AI-Integrated Smart Textiles",
