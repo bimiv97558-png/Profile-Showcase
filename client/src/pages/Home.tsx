@@ -20,6 +20,7 @@ import {
   FlaskConical, 
   MonitorCheck,
   Languages,
+  BriefcaseBusiness,
   Mail,
   Linkedin,
   Github,
@@ -41,6 +42,13 @@ const projects = [
     desc: "Development of a High-Performance 100% Sustainable Denim Yarn by blending mechanical cotton waste with Lyocell fibers. Focused on circular fashion economy.",
     tags: ["Sustainability", "Circular Economy", "R&D"],
     icon: Leaf
+  },
+  {
+    title: "Wearable Woven Circuit Cloth by Lappet Movement",
+    category: "Final Year Project",
+    desc: "A final-year project focused on wearable woven circuit cloth by Lappet Movement.",
+    tags: ["Wearable Textiles", "Woven Circuits", "Lappet Movement"],
+    icon: Microchip
   },
   {
     title: "AI-Integrated Smart Textiles",
@@ -239,8 +247,8 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground">Current CGPA</p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                  <p className="font-bold text-4xl text-secondary mb-1">2026</p>
-                  <p className="text-sm text-muted-foreground">Graduation Year</p>
+                  <p className="font-bold text-2xl text-secondary mb-1">October 2026</p>
+                  <p className="text-sm text-muted-foreground">Graduated</p>
                 </div>
               </div>
             </motion.div>
@@ -418,7 +426,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         
         <div className="container max-w-7xl mx-auto relative z-10">
-          <SectionHeader title="My Journey" subtitle="Education & Leadership" />
+          <SectionHeader title="My Journey" subtitle="Education & Experience" />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Education Column */}
@@ -429,7 +437,7 @@ export default function Home() {
               <div className="relative border-l-2 border-white/10 pl-8 space-y-12">
                 <div className="relative">
                   <span className="absolute -left-[41px] top-0 w-5 h-5 bg-primary rounded-full ring-4 ring-slate-900" />
-                  <span className="text-sm text-primary font-mono mb-2 block">2022 - 2026 (Present)</span>
+                  <span className="text-sm text-primary font-mono mb-2 block">Graduated: October 2026</span>
                   <h4 className="text-xl font-bold text-white mb-1">B.Sc. in Textile Engineering</h4>
                   <p className="text-white/60 mb-4">BGMEA University of Fashion & Technology</p>
                   <div className="inline-block px-4 py-2 bg-white/10 rounded-lg border border-white/20 backdrop-blur-sm">
@@ -452,7 +460,7 @@ export default function Home() {
             {/* Leadership/Experience Column */}
             <div id="experience">
               <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
-                <Trophy className="text-secondary" /> Experience & Leadership
+                <BriefcaseBusiness className="text-secondary" /> Industrial Experience
               </h3>
               <div className="space-y-6">
                 {/* Internship */}
@@ -461,11 +469,11 @@ export default function Home() {
                   className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-primary/50 transition-colors"
                 >
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-bold text-lg text-white">Intern</h4>
+                    <h4 className="font-bold text-lg text-white">Textile Engineering Intern</h4>
                     <span className="px-2 py-1 bg-primary/20 text-primary text-xs rounded">Internship</span>
                   </div>
-                  <p className="text-white/80 font-medium mb-1">AKH Group, Bangladesh</p>
-                  <p className="text-white/50 text-sm font-mono mb-3">April 2026 – June 2026</p>
+                  <p className="text-white/80 font-medium mb-1">AKH Knitting &amp; Dyeing Ltd.</p>
+                  <p className="text-white/50 text-sm font-mono mb-3">April 2026 – July 2026</p>
                   <ul className="space-y-1">
                     {[
                       "Observed and supported knitting production processes and fabric development activities.",
@@ -480,6 +488,8 @@ export default function Home() {
                     ))}
                   </ul>
                 </motion.div>
+
+                <h4 className="text-lg font-semibold text-white pt-2">Leadership &amp; Activities</h4>
 
                 <motion.div 
                   whileHover={{ x: 10 }}
